@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventLitez - Simple Event Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-calendar-alt"></i>
+                <h1>EventLitez</h1>
+            </div>
+            <button id="createEventBtn" class="create-btn">Create Event</button>
+        </nav>
+    </header>
+
+    <div class="character character-1">
+        <img src="https://assets.website-files.com/5e51c674258ffe10d286d30a/5e535b5c2c16e82ce80d8b42_peep-59.svg" alt="Character 1">
+    </div>
+    <div class="character character-2">
+        <img src="https://assets.website-files.com/5e51c674258ffe10d286d30a/5e535b5c2c16e82ce80d8b42_peep-59.svg" alt="Character 2">
+    </div>
+
+    <main>
+        <section class="events-container">
+            <h2>Upcoming Events</h2>
+            <div id="eventsList" class="events-grid"></div>
+        </section>
+
+        <!-- Event Creation Modal -->
+        <div id="eventModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Create New Event</h2>
+                <form id="eventForm">
+                    <div class="form-group">
+                        <label for="eventName">Event Name</label>
+                        <input type="text" id="eventName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventDate">Date</label>
+                        <input type="date" id="eventDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventTime">Time</label>
+                        <input type="time" id="eventTime" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventLocation">Location</label>
+                        <input type="text" id="eventLocation" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventDescription">Description</label>
+                        <textarea id="eventDescription" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Create Event</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 

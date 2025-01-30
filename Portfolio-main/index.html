@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">RISHITHA'S PORTFOLIO</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1>Rishitha</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>I am G.V. Rishitha, a dedicated student from the Computer Science and Engineering department at JNTUA College of Engineering, Anantapur. Known for my hard work and consistent performance, I have a deep passion for technology and actively participate in various projects and extracurricular activities. I strive to balance academic rigor with practical application, always aiming for excellence. My commitment to my studies and collaborative spirit have made me a valued member of my department. I take pride in my perseverance and dedication, which drive me to continually achieve my best.</p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/rishitha_1011?igsh=MTY1cTl3YXpqb3k5ZQ=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/g-v-rishitha-692b0b292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a> 
+            </div>
+            <a href="https://drive.google.com/file/d/1D3H7B1VSXddxQJsjbz05mny1nKJimkB3/view?usp=drivesdk" class="btn">Download CV</a>
+        </div>
+        
+        <div class="home-img">
+            <img src="profile.jpg" alt="">
+        </div>
+      
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="profile.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>My Introduction</h3>
+            <p>I am G.V. Rishitha, a committed student from the Computer Science and Engineering department at JNTUA College of Engineering, Anantapur. My hard work and consistent performance reflect my passion for technology and learning. I actively engage in various projects and extracurricular activities, always striving to balance academic excellence with practical experience. My dedication and collaborative spirit have made me a valued member of my department. I take pride in my perseverance and determination to achieve my best in all endeavors.</p>
+            <br>
+            <a href="#projects" class="btn">Read more</a>        
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+
+        <div class="projects-container">
+            <div class="projects-box">
+                <i class="fa-solid fa-check"></i>
+                <h3>Completed</h3>
+                <p>AI Voice Assistant using python, Smart parking Systems using IOT, Simple Web Pages, Personal Portfolio</p>
+
+            </div>
+        </div>
+
+        <div class="projects-container">
+            <div class="projects-box">
+                <i class="fa-solid fa-certificate"></i>
+                <h3>Certifications</h3>
+                <p>Web Development - Internshala || Linux for LFCA Certification - Coursera || Databases: Relational Databases and SQL - Edx </p>
+
+            </div>
+        </div>
+
+        <div class="projects-container">
+            <div class="projects-box">  
+                <i class="fa-solid fa-ribbon"></i>
+                <h3>Experience</h3>
+                <p>2+ Years as intern in various companies.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email Address">
+
+             </div>
+             <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+             <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Rishitha | JNTUA CEA</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="JS/main.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            const typed = new Typed('.multiple-text',{
+                strings: ['Student','Enthusiast','Developer'],
+                typeSpeed: 70,
+                backSpeed: 70,
+                backDelay: 1000,
+                loop: true,
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body> 
+</html>
